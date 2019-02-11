@@ -1,0 +1,15 @@
+    <resources>
+        <!-- Title for the application. [CHAR LIMIT=12] -->
+        <string name="app_name">Music!</string>
+        <!-- Category name for phrases [CHAR LIMIT=20] -->
+        <string name="AAA">AAA</string>
+
+        <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+        <string name="BBB">BBB</string>
+
+        <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+        <string name="CCC">CCC</string>
+
+        <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+        <string name="DDD">DDD</string>
+    </resources>
