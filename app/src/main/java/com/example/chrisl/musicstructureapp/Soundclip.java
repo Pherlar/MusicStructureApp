@@ -5,6 +5,7 @@ public class Soundclip{
     private String mSoundclipName;
     private String mSoundclipArtist;
     private String mSoundclipInfo;
+    private int photoId;
 
     //Create new soundclip object
     public Soundclip (String soundclipName, String soundclipArtist, String soundclipInfo)
@@ -12,7 +13,6 @@ public class Soundclip{
         mSoundclipName = soundclipName;
         mSoundclipArtist = soundclipArtist;
         mSoundclipInfo = soundclipInfo;
-
     }
 
     public String getSoundclipName(){

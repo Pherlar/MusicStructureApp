@@ -28,7 +28,6 @@ public class CategoryDActivity extends AppCompatActivity {
 
 
 
-
             SoundclipAdapter adapter = new SoundclipAdapter(this, soundclips);
 
             ListView listView = (ListView) findViewById(R.id.list);
