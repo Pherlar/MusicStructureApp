@@ -1,6 +1,7 @@
 package com.example.chrisl.musicstructureapp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -37,8 +39,8 @@ public class SoundclipAdapter extends ArrayAdapter<Soundclip> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
-        Soundclip currentSoundclip = getItem(position);
+        // Get the object located at this position in the list
+        final Soundclip currentSoundclip = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_tv);
@@ -50,27 +52,27 @@ public class SoundclipAdapter extends ArrayAdapter<Soundclip> {
         TextView descTextView = (TextView) listItemView.findViewById(R.id.description_tv);
         descTextView.setText(currentSoundclip.getSoundclipInfo());
 
-/*
+        //add play button text view to adapter
         ImageButton playButton = listItemView.findViewById(R.id.playButton);
+
+        //set an onclick listener to each play button as it is created
         playButton.setOnClickListener(new View.OnClickListener()
         {
+            // run this once clicked
             @Override
             public void onClick(View v)
             {
-                if(sound_category == "AAA")
-                {
-                    Soundclip clickSound = CategoryAActivity.soundclips.get(position);
-                }
-
-
-                Intent intent = new Intent(this, PlayAcitivy.Class);
-
+                Context sound_category = getContext();
+                Intent intent = new Intent(sound_category, NowPlayingActivity.class);
+                //pass in the clicked song value with the intent
+                intent.putExtra("Current Soundclip",currentSoundclip);
+                sound_category.startActivity(intent);
             }
 
         });
- */
 
-        // Return the whole list item layout (containing 2 TextViews)
+
+        // Return the whole list item layout (containing multiple TextViews)
         // so that it can be shown in the ListView
         return listItemView;
     }

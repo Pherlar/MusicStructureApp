@@ -1,10 +1,15 @@
 package com.example.chrisl.musicstructureapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 
@@ -20,11 +25,11 @@ public class CategoryAActivity extends AppCompatActivity {
             soundclips = new ArrayList<Soundclip>();
 
 
-            soundclips.add(new Soundclip("Soundclip 1", "Artist 1","Description 1"));
-            soundclips.add(new Soundclip("Soundclip 2", "Artist 2","Description 2"));
-            soundclips.add(new Soundclip("Soundclip 3", "Artist 3","Description 3"));
-            soundclips.add(new Soundclip("Soundclip 4", "Artist 4","Description 4"));
-            soundclips.add(new Soundclip("Soundclip 5", "Artist 5","Description 5"));
+            soundclips.add(new Soundclip("Soundclip A1", "Artist A1","Description 1"));
+            soundclips.add(new Soundclip("Soundclip A2", "Artist A2","Description 2"));
+            soundclips.add(new Soundclip("Soundclip A3", "Artist A3","Description 3"));
+            soundclips.add(new Soundclip("Soundclip A4", "Artist A4","Description 4"));
+            soundclips.add(new Soundclip("Soundclip A5", "Artist A5","Description 5"));
 
 
 
@@ -34,11 +39,19 @@ public class CategoryAActivity extends AppCompatActivity {
             SoundclipAdapter adapter = new SoundclipAdapter(this, soundclips);
 
             ListView listView = findViewById(R.id.list);
-            ImageButton ib = findViewById(R.id.playButton);
-
-
+            //ImageButton ib = (ImageButton)findViewById(R.id.playButton);
             listView.setAdapter(adapter);
 
+
+
         }
+
+            //TODO Create onButtonClick function which creates an intent to
+            //TODO open the selected clip in the now Playing Activity
+
+
+
+
+
     }
 

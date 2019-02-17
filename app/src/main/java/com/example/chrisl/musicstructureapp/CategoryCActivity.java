@@ -18,11 +18,11 @@ public class CategoryCActivity extends AppCompatActivity {
             ArrayList<Soundclip> soundclips = new ArrayList<Soundclip>();
 
 
-            soundclips.add(new Soundclip("Soundclip 1", "Artist 1","Description 1"));
-            soundclips.add(new Soundclip("Soundclip 2", "Artist 2","Description 2"));
-            soundclips.add(new Soundclip("Soundclip 3", "Artist 3","Description 3"));
-            soundclips.add(new Soundclip("Soundclip 4", "Artist 4","Description 4"));
-            soundclips.add(new Soundclip("Soundclip 5", "Artist 5","Description 5"));
+            soundclips.add(new Soundclip("Soundclip C1", "Artist C1","Description 1"));
+            soundclips.add(new Soundclip("Soundclip C2", "Artist C2","Description 2"));
+            soundclips.add(new Soundclip("Soundclip C3", "Artist C3","Description 3"));
+            soundclips.add(new Soundclip("Soundclip C4", "Artist C4","Description 4"));
+            soundclips.add(new Soundclip("Soundclip C5", "Artist C5","Description 5"));
 
 
 

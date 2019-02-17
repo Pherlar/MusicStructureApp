@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link FamilyActivity}
-                Intent familyIntent = new Intent(MainActivity.this, CategoryBActivity.class);
+                // Create a new intent to open the Category B activity
+                Intent categoryBIntent = new Intent(MainActivity.this, CategoryBActivity.class);
 
                 // Start the new activity
-                startActivity(familyIntent);
+                startActivity(categoryBIntent);
             }
         });
 
@@ -57,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link ColorsActivity}
-                Intent colorsIntent = new Intent(MainActivity.this, CategoryCActivity.class);
+                // Create a new intent to open the Category C activity
+                Intent categoryCIntent = new Intent(MainActivity.this, CategoryCActivity.class);
 
                 // Start the new activity
-                startActivity(colorsIntent);
+                startActivity(categoryCIntent);
             }
         });
 
@@ -73,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the phrases category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PhrasesActivity}
-                Intent phrasesIntent = new Intent(MainActivity.this, CategoryDActivity.class);
+                // Create a new intent to open the Category D activity
+                Intent categoryDIntent = new Intent(MainActivity.this, CategoryDActivity.class);
 
                 // Start the new activity
-                startActivity(phrasesIntent);
+                startActivity(categoryDIntent);
             }
         });
     }
