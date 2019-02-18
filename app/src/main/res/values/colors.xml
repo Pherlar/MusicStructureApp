@@ -24,14 +24,14 @@
     <color name="tan_background">#FFF7DA</color>
 
     <!-- Background color for the AAA category -->
-    <color name="category_numbers">#FD8E09</color>
+    <color name="category_AAA">#FD8E09</color>
 
     <!-- Background color for the BBB category -->
-    <color name="category_family">#379237</color>
+    <color name="category_BBB">#379237</color>
 
     <!-- Background color for the CCC category -->
-    <color name="category_colors">#8800A0</color>
+    <color name="category_CCC">#8800A0</color>
 
     <!-- Background color for the DDD category -->
-    <color name="category_phrases">#16AFCA</color>
+    <color name="category_DDD">#16AFCA</color>
 </resources>

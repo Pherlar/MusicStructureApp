@@ -11,18 +11,19 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class CategoryAActivity extends AppCompatActivity {
 
-        public static ArrayList<Soundclip> soundclips;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.soundclip_list);
 
             // Create an ArrayList of words
-            soundclips = new ArrayList<Soundclip>();
+            ArrayList<Soundclip> soundclips = new ArrayList<Soundclip>();
 
 
             soundclips.add(new Soundclip("Soundclip A1", "Artist A1","Description 1"));
@@ -39,7 +40,8 @@ public class CategoryAActivity extends AppCompatActivity {
             SoundclipAdapter adapter = new SoundclipAdapter(this, soundclips);
 
             ListView listView = findViewById(R.id.list);
-            //ImageButton ib = (ImageButton)findViewById(R.id.playButton);
+            //set colour to adapter
+            //listView.setBackgroundResource(R.color.category_family);
             listView.setAdapter(adapter);
 
 

@@ -10,25 +10,25 @@
     <TextView
         android:id="@+id/CategoryA"
         style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
+        android:background="@color/category_AAA"
         android:text="@string/AAA" />
 
     <TextView
         android:id="@+id/CategoryB"
         style="@style/CategoryStyle"
-        android:background="@color/category_family"
+        android:background="@color/category_BBB"
         android:text="@string/BBB" />
 
     <TextView
         android:id="@+id/CategoryC"
         style="@style/CategoryStyle"
-        android:background="@color/category_colors"
+        android:background="@color/category_CCC"
         android:text="@string/CCC" />
 
     <TextView
         android:id="@+id/CategoryD"
         style="@style/CategoryStyle"
-        android:background="@color/category_phrases"
+        android:background="@color/category_DDD"
         android:text="@string/DDD" />
 
 </LinearLayout>
