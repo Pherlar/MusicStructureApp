@@ -2,7 +2,7 @@ package com.example.chrisl.musicstructureapp;
 
 import java.io.Serializable;
 
-//addded 'implements serialisable' to allow object instances to be passed in intents
+//added 'implements serializable' to allow object instances to be passed in intents
 public class Soundclip implements Serializable {
     //Default translation for the word /
     private String mSoundclipName;

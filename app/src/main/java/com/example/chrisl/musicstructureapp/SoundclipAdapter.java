@@ -26,8 +26,7 @@ public class SoundclipAdapter extends ArrayAdapter<Soundclip> {
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, soundclips);
     }
-
-
+    
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -70,7 +69,6 @@ public class SoundclipAdapter extends ArrayAdapter<Soundclip> {
             }
 
         });
-
 
         // Return the whole list item layout (containing multiple TextViews)
         // so that it can be shown in the ListView

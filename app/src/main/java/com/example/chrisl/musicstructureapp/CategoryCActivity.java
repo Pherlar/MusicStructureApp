@@ -14,20 +14,14 @@ public class CategoryCActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.soundclip_list);
 
-            // Create an ArrayList of words
+            // Create an ArrayList of soundclips
             ArrayList<Soundclip> soundclips = new ArrayList<Soundclip>();
-
 
             soundclips.add(new Soundclip("Soundclip C1", "Artist C1","Description 1"));
             soundclips.add(new Soundclip("Soundclip C2", "Artist C2","Description 2"));
             soundclips.add(new Soundclip("Soundclip C3", "Artist C3","Description 3"));
             soundclips.add(new Soundclip("Soundclip C4", "Artist C4","Description 4"));
             soundclips.add(new Soundclip("Soundclip C5", "Artist C5","Description 5"));
-
-
-
-
-
 
             SoundclipAdapter adapter = new SoundclipAdapter(this, soundclips);
 
